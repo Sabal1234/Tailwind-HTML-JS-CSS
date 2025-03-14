@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<!-- Main Navigation Bar -->
+  <nav class="flex justify-between items-center p-3 bg-white border-b border-gray-200">
+        <div class="flex items-center space-x-4">
+            <button>
+                <img class="w-6" src="./image/hamburger.png" alt="Menu">
+            </button>
+            <div class="flex items-center">
+                <img src="./image/Youtubelogo.png" alt="YouTube Logo" class="w-10">
+                <h1 class="ml-2 text-xl font-bold">YouTube</h1>
+            </div>
+        </div>
+
+        <div class="flex items-center">
+            <input
+                type="text"
+                placeholder="Search"
+                class="px-4 py-2 bg-white border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+            <button class="px-3 py-2 bg-gray-100 border border-l-0 border-gray-300 rounded-r-full">
+                <img class="w-5 h-6" src="./image/searchicon.png" alt="Search">
+            </button>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <button class="px-4 py-2 bg-gray-100 rounded-full hover:bg-gray-200">+ Create</button>
+            <img src="./image/notifaction.png" alt="Notifications" class="w-7 h-7">
+        </div>
+    </nav>
+  <!-- Left Nav -->
+<div class="flex h-screen">
+  <div class="h-full bg-white">
+    <ul class="pl-5 space-y-4">
+      <li>
+        <a href="tailwind.html" class="flex p-2 w-full bg-gray-100 hover:bg-gray-200 ">
+       <img src="./image/Home.png" class="w-7 ">
+    <span class="ml-3 text-base">Home</span>
+        </a>
+      </li>
+ <li>
+        <a href="ShortsVideo.html" class="flex p-2 w-full hover:bg-gray-100 ">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" focusable="false" aria-hidden="false" style="pointer-events: none; display: inherit; width:12%"><path clip-rule="evenodd" d="m7.61 15.719.392-.22v-2.24l-.534-.228-.942-.404c-.869-.372-1.4-1.15-1.446-1.974-.047-.823.39-1.642 1.203-2.097h.001L15.13 3.59c1.231-.689 2.785-.27 3.466.833.652 1.058.313 2.452-.879 3.118l-1.327.743-.388.217v2.243l.53.227.942.404c.869.372 1.4 1.15 1.446 1.974.047.823-.39 1.642-1.203 2.097l-.002.001-8.845 4.964-.001.001c-1.231.688-2.784.269-3.465-.834-.652-1.058-.313-2.451.879-3.118l1.327-.742Zm1.993 6.002c-1.905 1.066-4.356.46-5.475-1.355-1.057-1.713-.548-3.89 1.117-5.025a4.14 4.14 0 01.305-.189l1.327-.742-.942-.404a4.055 4.055 0 01-.709-.391c-.963-.666-1.578-1.718-1.644-2.877-.08-1.422.679-2.77 1.968-3.49l8.847-4.966c1.905-1.066 4.356-.46 5.475 1.355 1.057 1.713.548 3.89-1.117 5.025a4.074 4.074 0 01-.305.19l-1.327.742.942.403c.253.109.49.24.709.392.963.666 1.578 1.717 1.644 2.876.08 1.423-.679 2.77-1.968 3.491l-8.847 4.965ZM10 14.567a.25.25 0 00.374.217l4.45-2.567a.25.25 0 000-.433l-4.45-2.567a.25.25 0 00-.374.216v5.134Z" fill-rule="evenodd"></path></svg>
+  <span class="ml-3 text-base">Shorts</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex p-2 w-full hover:bg-gray-200">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 40" focusable="false" aria-hidden="false" style="pointer-events: none; display: inherit; width: 17%;"><path clip-rule="evenodd" d="M4 4.5A1.5 1.5 0 015.5 3h13A1.5 1.5 0 0120 4.5H4Zm16.5 3h-17v11h17v-11ZM3.5 6A1.5 1.5 0 002 7.5v11A1.5 1.5 0 003.5 20h17a1.5 1.5 0 001.5-1.5v-11A1.5 1.5 0 0020.5 6h-17Zm7.257 4.454a.5.5 0 00-.757.43v4.233a.5.5 0 00.757.429L15 13l-4.243-2.546Z" fill-rule="evenodd"></path></svg>
+  <span class="text-base">Subscriptions</span>
+        </a>
+      </li>
+    </ul>
+   </div>
+      
+  <main class="p-4 w-full bg-white">
+    <div class="grid grid-cols-3 gap-2">
+    <!-- Video Card 1 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <iframe 
+        class="w-full h-40"
+        src="https://www.youtube.com/embed/njnhMuL1tx0?si=HKZ7YZF9d-wEblhX" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+      <div class="p-2">
+        <p class="font-semibold">Video 1</p>
+        <p class="text-gray-600 text-sm">Description of video 1</p>
+      </div>
+    </div>
+
+    <!--  -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <iframe 
+        class="w-full h-40"
+        src="https://www.youtube.com/embed/VQpTVVsNHQs?si=V9B9BzGyLRNFQ4gm6" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+      <div class="p-2">
+        <p class="font-semibold">Video 2</p>
+        <p class="text-gray-600 text-sm">Description of the video 2</p>
+      </div>
+    </div>
+ 
+      
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <iframe 
+        class="w-full h-40"
+        src="https://www.youtube.com/embed/VQpTVVsNHQs?si=V9B9BzGyLRNFQ4gm6" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+      <div class="p-2">
+        <p class="font-semibold">Video 3</p>
+        <p class="text-gray-600 text-sm">Description of the video 3</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <iframe 
+        class="w-full h-40"
+        src="https://www.youtube.com/embed/njnhMuL1tx0?si=HKZ7YZF9d-wEblhX" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+      <div class="p-2">
+        <p class="font-semibold">Video 4</p>
+        <p class="text-gray-600 text-sm">Description of video 4</p>
+      </div>
+    </div>
+
+    
+  </div>
+  </main>
+</div>
+
+</body>
+</html>

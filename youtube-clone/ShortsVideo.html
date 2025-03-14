@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Shorts Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-gray-100">
+    <!-- Main Navigation Bar -->
+    <nav class="flex justify-between items-center p-3 bg-white border-b border-gray-200">
+        <div class="flex items-center space-x-4">
+            <button>
+                <img class="w-6" src="./image/hamburger.png" alt="Menu">
+            </button>
+            <div class="flex items-center">
+                <img src="./image/Youtubelogo.png" alt="YouTube Logo" class="w-10">
+                <h1 class="ml-2 text-xl font-bold">YouTube</h1>
+            </div>
+        </div>
+
+        <div class="flex items-center space-x-2">
+            <input
+                type="text"
+                placeholder="Search"
+                class="px-4 py-2 bg-white border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+            <button class="px-3 py-2 bg-gray-100 border border-l-0 border-gray-300 rounded-r-full">
+                <img class="w-5 h-5" src="./image/searchicon.png" alt="Search">
+            </button>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <button class="px-4 py-2 bg-gray-100 rounded-full hover:bg-gray-200">+ Create</button>
+            <img src="./image/notifaction.png" alt="Notifications" class="w-7 h-7">
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="flex h-screen">
+        <!-- Left Sidebar -->
+        <div class="w-64 bg-white border-r border-gray-200 overflow-y-auto">
+            <ul class="p-4 space-y-2">
+                <li>
+                    <a href="tailwind.html" class="sidebar-item flex items-center p-3 rounded-lg hover:bg-gray-100">
+                        <img src="./image/Home.png" class="w-6 h-6">
+                        <span class="ml-4 text-sm">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="ShortsVideo.html" class="sidebar-item active flex items-center p-3 rounded-lg hover:bg-gray-200">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                            <!-- Your SVG path here -->
+                        </svg>
+                        <span class="ml-4 text-sm">Shorts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-item flex items-center p-3 rounded-lg hover:bg-gray-100">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                            <!-- Your SVG path here -->
+                        </svg>
+                        <span class="ml-4 text-sm">Subscriptions</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-y-auto p-4">
+            <div class="max-w-xl mx-auto">
+                <iframe 
+                    class="w-full aspect-video rounded-xl shadow-lg"
+                    src="https://www.youtube.com/embed/OgJ9p9-Mn8A" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
