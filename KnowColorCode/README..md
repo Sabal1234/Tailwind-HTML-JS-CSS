@@ -1,0 +1,3 @@
+- The site is made using Tailwind CSS, Java script and HTML.
+- It contain a total of 14 color color code, wrapped inside specific-color div. 
+- With the help of js, whenever the color div is placed, and alert box pop up which gives color code.
